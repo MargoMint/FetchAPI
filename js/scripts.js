@@ -1,6 +1,6 @@
 const innerContainer = document.querySelector('.inner');
 const btn = document.querySelector('.btn');
-const api = "https://jsonplaceholder.typicode.com/users";
+const api = "https://margomint.github.io/FetchAPI/jsons/rita.json";
 
 
 
@@ -23,9 +23,8 @@ function createCards(cardData) {
     cardData.forEach(cardData => {
         const card = 
         `<div class="card">
-                <div class="card__img"><img src="img/me.png" alt="avatar"></div>
+                <div class="card__img"><img src="${cardData.img}" alt="avatar"></div>
                 <div class="card__name">${cardData.name}</div>
-                <div class="card__name">${cardData.img}</div>
                 <div class="card__email">${cardData.email}</div>
                 <div class="card__city">${cardData.address.city}</div>
                 <div class="card__website">${cardData.website}</div>
